@@ -163,11 +163,13 @@ This project implements a classification pipeline using a Support Vector Machine
 ## 🔁 8. Additional Experiments
 
 - **Tried Models**:
-  - **ResNet18** as an alternative feature extractor
+  - **ResNet50** as an alternative feature extractor
   - Applied both **Logistic Regression** and **SVM** on features extracted from both CNNs
 - **Result**:
-  - The combination of the selected CNN feature extractor (not ResNet18) + PCA + **SVM with `C=0.001`** yielded the **best performance**
+  - The combination of the selected CNN feature extractor (ResNet18) + PCA + **SVM with `C=0.001`** yielded the **best performance**
   - ResNet18 and Logistic Regression combinations did not outperform this configuration on validation or test metrics
+  - ResNet50 and SVM combinations did not outperform this configuration on validation or test metrics
+  - ResNet50 and Logistic Regression combinations did not outperform this configuration on validation or test metrics
 
 ---
 
